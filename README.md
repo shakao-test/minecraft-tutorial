@@ -1,8 +1,8 @@
-# Spawn mobs
+# Spawn Cows
 
 ## Introduction @unplugged
 
-Spawn a bunch of mobs!
+Spawn a bunch of cows!
 
 ## Step 1
 
