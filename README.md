@@ -1,31 +1,44 @@
+# Spawn mobs
 
-> Open this page at [https://shakao-test.github.io/minecraft-tutorial/](https://shakao-test.github.io/minecraft-tutorial/)
+## Introduction @unplugged
 
-## Use as Extension
+Spawn a bunch of mobs!
 
-This repository can be added as an **extension** in MakeCode.
+## Step 1
 
-* open [https://minecraft.makecode.com/](https://minecraft.makecode.com/)
-* click on **New Project**
-* click on **Extensions** under the gearwheel menu
-* search for **https://github.com/shakao-test/minecraft-tutorial** and import
+Drag in an ``||player:on chat command||`` and rename it to **mobs**.
 
-## Edit this project ![Build status badge](https://github.com/shakao-test/minecraft-tutorial/workflows/MakeCode/badge.svg)
+```blocks
+player.onChat("mobs", function () {
+})
+```
 
-To edit this repository in MakeCode.
+## Step 2
 
-* open [https://minecraft.makecode.com/](https://minecraft.makecode.com/)
-* click on **Import** then click on **Import URL**
-* paste **https://github.com/shakao-test/minecraft-tutorial** and click import
+Put in ``||mobs:spawn||`` to spawn some mobs at your position.
 
-## Blocks preview
+```blocks
+player.onChat("mobs", function () {
+    mobs.spawn(COW, pos(0, 0, 0))
+})
+```
 
-This image shows the blocks code from the last commit in master.
-This image may take a few minutes to refresh.
+## Step 3
 
-![A rendered view of the blocks](https://github.com/shakao-test/minecraft-tutorial/raw/master/.github/makecode/blocks.png)
+Go to Minecraft and enter `mobs` in the chat to spawn mobs!
 
-#### Metadata (used for search, rendering)
 
-* for PXT/minecraft
-<script src="https://makecode.com/gh-pages-embed.js"></script><script>makeCodeRender("{{ site.makecode.home_url }}", "{{ site.github.owner_name }}/{{ site.github.repository_name }}");</script>
+```ghost
+player.onChat("square", function () {
+    agent.teleportToPlayer()
+    for (let i = 0; i <= 3; i++) {
+        agent.move(FORWARD, 3)
+        if (agent.detect(AgentDetection.Block, FORWARD)) {
+            agent.turn(RIGHT_TURN)
+            agent.move(FORWARD, 1)
+        } else {
+            agent.turn(LEFT_TURN)
+        }
+    }
+})
+```
