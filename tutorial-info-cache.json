@@ -1,0 +1,12 @@
+{
+    "usedBlocks": {
+        "minecraftOnChat": 1,
+        "minecraftSummon": 1,
+        "minecraftAgentTeleport": 1,
+        "pxt_controls_for": 1,
+        "minecraftAgentMove": 1,
+        "controls_if": 1,
+        "minecraftAgentDetect": 1,
+        "minecraftAgentTurn": 1
+    }
+}
